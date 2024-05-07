@@ -2,6 +2,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_bootstrap import Bootstrap
 from flask_ckeditor import CKEditor
 import datetime
+import bleach
 # My Files (Classes)
 from classes.blog_post_class import db, BlogPost
 from classes.post_form_class import CreatePostForm
