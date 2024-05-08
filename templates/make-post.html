@@ -27,9 +27,6 @@
         <!-- Configuring CKeditor -->
         {{ ckeditor.config(name='body') }}
 
-        <!-- Removing the HTML Tags -->
-        {{ body|striptags }}
-
         <!-- Adding WTF Quick Form -->
         {{ wtf.quick_form(form, button_map={"submit": "primary"}) }}
     </div>
