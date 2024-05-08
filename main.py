@@ -83,7 +83,7 @@ def edit_post(post_id):
         # Commiting changes to DB
         db.session.commit()
         # Redirecting to home page in case of success
-        return redirect(url_for("show_post"))
+        return redirect(url_for("show_post", post_id=post_id))
     return render_template("edit-post.html", form=edit_form)
 
 # Delete Route
